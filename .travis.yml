@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- stable
+npm: true
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: OoE8i2al4IyVtEWk0RdfFfcQANHtoPkLDTjDiO6+KeeI54dcNnkIAbLDWvG+ma9/RsvNxg5+MR66Fv5RLsI6J3Til0cRJZ9rJ/oyFZCdul2s8p4jxkR1w20axknENb7aEZFhHd0u9QwJuE0nb73qK5IQoglbbvfXZHmsNwv4xmBr2l8ckyAp6oyS64MiAfbBM3Y9aksmxvhcCevqhh/Fjxdcd0zY1iPVWJ8fpB3ufMPS0S+wZSZmopC+aReeA5UzMdQPGyOqBk3NgiOHg5P4LBPWKqXlh4CUoenYIb4robguDyQuzzv9e/pZ7HfI7WDY1CU2rNGG9TeKF7Rp2/ejRKZ8H8yo5zLm9uS5N1u5b6OmPHhJf3cI2uJoCTTZSCJzrE5XqfEXrVTEKKnFPrm1VXwOifCNAMEVvEmuhp0y7iqNU3i804E0JCiu2V3nS41HeTqrHuWOPnWaNOCMga0TWsDHosOWREuCTQecGGg0cr2FhjppSI21k0mhUnoet0fxlfcSA9II1S/N2x1TH9lW9lNlsa1B1ZE1R+dHYQuT4uOeS7cBwSRQE5s7O691MLxbn7qehJ3Q07k0+QRcGpGt9s50A1BlNhh3vKcOLcI5jQ9a5ldSszTDa98azl16dypQDnQTmAhrZfVvBdwwW7B1skCX1MkHiRXCYuekTeYftug=
+  app: sleepy-mesa-15573
+  on:
+    repo: xmkchen/sample-travis-heroku
