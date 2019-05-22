@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3001; // NOTE-TO-SELF: Travis uses 3000, do not
 app.get('/', (req, res) => {
   // eslint-disable-next-line no-console
   console.log('req = \n', req);
-  res.send('Test CI with Travis 1.0');
+  res.send('<h1>kathy was here 21-May-2019</h1>');
 });
 
 const server = app.listen(PORT, () => {
